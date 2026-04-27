@@ -339,9 +339,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="field">
           <label>Прозрачность <span class="hint">0 = невидим · 1 = полный</span></label>
           <div class="slider-wrap">
-            <input type="range" name="opacity" min="0" max="1" step="0.05" value="0.50"
+            <input type="range" name="opacity" min="0" max="1" step="0.05" value="0.40"
               oninput="document.getElementById('sv-opacity').textContent=(+this.value*100).toFixed(0)+'%'">
-            <span class="slider-val" id="sv-opacity">50%</span>
+            <span class="slider-val" id="sv-opacity">40%</span>
           </div>
         </div>
 
@@ -356,12 +356,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <div class="field">
           <label>Отступ X (pt) <span class="hint">от правого края</span></label>
-          <input type="number" name="offset_x" value="20" min="-5000" max="5000" step="1">
+          <input type="text" name="offset_x" value="20" min="-5000" max="5000" step="1">
         </div>
 
         <div class="field">
           <label>Отступ Y (pt) <span class="hint">от нижнего края</span></label>
-          <input type="number" name="offset_y" value="20" min="-5000" max="5000" step="1">
+          <input type="text" name="offset_y" value="20" min="-5000" max="5000" step="1">
         </div>
 
         <div class="field">
